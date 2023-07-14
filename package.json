@@ -1,4 +1,5 @@
 {
+  "homepage" : "https://reinax.github.io/Portfolio_Website/",
   "name": "portfolio-website",
   "version": "0.1.0",
   "private": true,
@@ -18,8 +19,7 @@
     "react-router-dom": "^6.14.1",
     "react-scripts": "5.0.1",
     "styled-components": "^5.3.11",
-    "web-vitals": "^2.1.4",
-    "homepage" : "https://reinax.github.io/Portfolio_Website/"
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
