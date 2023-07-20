@@ -6,20 +6,39 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import { ListItemButton } from '@mui/material';
 
 function Contact() {
-  return (
-    <div className='Container'>
+  let width = window.innerWidth;
+    if(width > 782){
+    return (
+      <div className='Container'>
+        <div className='ContactList'>
+          <List orientation='horizontal'>
+            <ListItemButton href='https://www.linkedin.com/in/bradleywinson/'>
+              <LinkedInIcon sx={{fontSize: 300}}/>
+            </ListItemButton>
+            <ListItemButton href='https://github.com/Reinax?tab=repositories'>
+              <GitHubIcon sx={{fontSize: 300}}/>
+            </ListItemButton>
+          </List>
+        </div>
+      </div>
+    )
+    }
+    else {
+      return (
+      <div className='Container'>
       <div className='ContactList'>
-        <List orientation='horizontal'>
+        <List orientation='vertical'>
           <ListItemButton href='https://www.linkedin.com/in/bradleywinson/'>
-            <LinkedInIcon sx={{fontSize: 300}}/>
+            <LinkedInIcon sx={{fontSize: 250}}/>
           </ListItemButton>
           <ListItemButton href='https://github.com/Reinax?tab=repositories'>
-            <GitHubIcon sx={{fontSize: 300}}/>
+            <GitHubIcon sx={{fontSize: 250}}/>
           </ListItemButton>
         </List>
       </div>
-    </div>
-  )
+      </div>
+      )
+    }
 }
 
 export default Contact
